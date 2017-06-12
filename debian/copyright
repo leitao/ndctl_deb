@@ -7,25 +7,8 @@ Files:     debian/*
 Copyright: Copyright(c) 2017 Breno Leitão. All rights reserved
 License:   GPL-2
 
-Files:     ndctl/builtin-xaction-namespace.c
-Copyright: 2015-2016 Intel Corporation. All rights reserved.
-License:   GPL-2
-
-Files:     ndctl/create-nfit.c
-Copyright: Copyright(c) 2014 Intel Corporation. All rights reserved.
-License:   GPL-2
-
-Files:     util/*
-Copyright: 2014-2016 Intel Corporation
-License:   GPL-2
-
-Files:     nfit.h
-Copyright: Copyright(c) 2013-2016 Intel Corporation. All rights reserved
-License:   GPL-2
-
-Files:     Documentation/*
-           ndctl/check.h
-           ndctl/region.c
+Files:     *
+Copyright: 2013-2017 Intel Corporation. All rights reserved.
 Copyright: Copyright (c) 2016 - 2017, Intel Corporation.
 License:   GPL-2
 
@@ -33,32 +16,6 @@ Files: 	   daxctl/daxctl.c
            ndctl/ndctl.c
 Copyright: Copyright(c) 2015-2017 Intel Corporation. All rights reserved.
            Copyright(c) 2005 Andreas Ericsson. All rights reserved.
-License:   GPL-2
-
-Files:     test/blk_namespaces.c
-Copyright: Copyright (c) 2015, Intel Corporation
-license:   GPL-2
-
-Files:     daxctl/list.c
-           ndctl/list.c
-           ndctl/namespace.c
-           ndctl/region.c
-           ndctl/test.c
-           ndctl/test.c
-           ndctl/util/json-smart.c
-           test.h
-           builtin.h
-	   test/*
-Copyright: Copyright(c) 2015-2017 Intel Corporation. All rights reserved.
-License:   GPL-2
-
-Files:     ndctl/bat.c
-Copyright: Copyright(c) 2014 Intel Corporation. All rights reserved.
-License:   GPL-2
-
-
-Files:     ndctl/check.c
-Copyright: Copyright(c) 2015-2016 Intel Corporation. All rights reserved.
 License:   GPL-2
 
 Files:     test/dax-dev.c
@@ -72,12 +29,14 @@ Files:     test/dax-dev.c
            ndctl/lib/libndctl.c
            ndctl/lib/libndctl-private.h
            daxctl/lib/libdaxctl-private.h
-Copyright: Copyright (c) 2014-2016, Intel Corporation
-license:   LGPL-2.1
-
-Files:     test/parent-uuid.c
+           test/parent-uuid.c
            test/pmem_namespaces.c
-Copyright: Copyright (c) 2015, Intel Corporation.
+           ndctl/builtin-dimm.c
+           ndctl/lib/libndctl-smart.c
+           ndctl/dimm.c
+           daxctl/libdaxctl.h
+           daxctl/lib/libdaxctl.c
+Copyright: Copyright (c) 2014-2016, Intel Corporation
 license:   LGPL-2.1
 
 Files:     ndctl/lib/libndctl-msft.c
@@ -85,14 +44,6 @@ Files:     ndctl/lib/libndctl-msft.c
 Copyright: Copyright (C) 2016-2017 Dell, Inc.
            Copyright (C) 2016 Hewlett Packard Enterprise Development LP
            Copyright (c) 2016, Intel Corporation.
-License:   LGPL-2.1
-
-Files:     ndctl/builtin-dimm.c
-           ndctl/lib/libndctl-smart.c
-           ndctl/dimm.c
-           daxctl/libdaxctl.h
-           daxctl/lib/libdaxctl.c
-Copyright: Copyright (c) 2016, Intel Corporation.
 License:   LGPL-2.1
 
 Files:     ndctl/lib/ndctl-hpe1.h
