@@ -1,0 +1,86 @@
+From a0cf0ee82e7fbe3db1455b7f4c19b232a0353cf8 Mon Sep 17 00:00:00 2001
+From: Breno Leitao <breno.leitao@gmail.com>
+Date: Mon, 12 Jun 2017 12:33:39 -0400
+Subject: [PATCH] daxctl: Initial manpage
+
+Currently daxctl(1) does not have a manpage, which causes some lintian
+error on some Linux Distribution, as Debian. On Debian, by the policy,
+every single binary should have a manpage.
+
+This patch simply adds a very initial manpage for daxctl utility.
+
+Signed-off-by: Breno Leitao <breno.leitao@gmail.com>
+---
+ Documentation/Makefile.am |  1 +
+ Documentation/daxctl.txt  | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 48 insertions(+)
+ create mode 100644 Documentation/daxctl.txt
+
+diff --git a/Documentation/Makefile.am b/Documentation/Makefile.am
+index c7e0758..a56c4f0 100644
+--- a/Documentation/Makefile.am
++++ b/Documentation/Makefile.am
+@@ -10,6 +10,7 @@
+ # General Public License for more details.
+ 
+ man1_MANS = \
++	daxctl.1 \
+ 	ndctl.1 \
+ 	ndctl-zero-labels.1 \
+ 	ndctl-read-labels.1 \
+diff --git a/Documentation/daxctl.txt b/Documentation/daxctl.txt
+new file mode 100644
+index 0000000..52b0b16
+--- /dev/null
++++ b/Documentation/daxctl.txt
+@@ -0,0 +1,47 @@
++daxctl(1)
++=========
++
++NAME
++----
++daxctl - Provides enumeration and provisioning commands for the Linux kernel Device-DAX facility
++
++SYNOPSIS
++--------
++[verse]
++'daxctl' [--version] [--help] COMMAND [ARGS]
++
++OPTIONS
++-------
++-v::
++--version::
++  Display daxctl version.
++
++-h::
++--help::
++  Run daxcl help command.
++
++DESCRIPTION
++-----------
++The daxctl utility provides enumeration and provisioning commands for
++the Linux kernel Device-DAX facility. This facility enables DAX mappings
++of performance / feature differentiated memory without need of a
++filesystem.
++
++SEE ALSO
++--------
++linkndctl:ndctl-create-namespace[1],
++linkndctl:ndctl-destroy-namespace[1],
++linkndctl:ndctl-check-namespace[1],
++linkndctl:ndctl-enable-region[1],
++linkndctl:ndctl-disable-region[1],
++linkndctl:ndctl-enable-dimm[1],
++linkndctl:ndctl-disable-dimm[1],
++linkndctl:ndctl-enable-namespace[1],
++linkndctl:ndctl-disable-namespace[1],
++linkndctl:ndctl-zero-labels[1],
++linkndctl:ndctl-read-labels[1],
++linkndctl:ndctl-list[1],
++https://www.kernel.org/doc/Documentation/nvdimm/nvdimm.txt[LIBNVDIMM
++Overview],
++http://pmem.io/documents/NVDIMM_Driver_Writers_Guide.pdf[NVDIMM Driver
++Writer's Guide]
+-- 
+2.11.0
+
