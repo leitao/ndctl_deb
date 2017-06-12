@@ -12,6 +12,7 @@ Build-Depends: debhelper (>=9),
                uuid-dev,
                libjson-c-dev
 Homepage: https://github.com/pmem/ndctl
+Vcs-Browser: https://github.com/leitao/ndctl_deb
 
 Package: ndctl
 Architecture: any
