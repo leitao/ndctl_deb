@@ -2,14 +2,12 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ndctl
 Source: https://github.com/pmem/ndctl
 
+Files:     *
+Copyright: 2013-2017 Intel Corporation. All rights reserved.
+License:   GPL-2
 
 Files:     debian/*
 Copyright: Copyright(c) 2017 Breno Leitão. All rights reserved
-License:   GPL-2
-
-Files:     *
-Copyright: 2013-2017 Intel Corporation. All rights reserved.
-Copyright: Copyright (c) 2016 - 2017, Intel Corporation.
 License:   GPL-2
 
 Files: 	   daxctl/daxctl.c
@@ -52,7 +50,6 @@ Copyright: Copyright (C) 2016 Hewlett Packard Enterprise Development LP
            Copyright (c) 2016, Intel Corporation.
 License:   LGPL-2.1
 
-Copyright: Public Domain
 Files:     ccan/array_size/*
            ccan/str/*
            ccan/short_types/*
@@ -62,11 +59,9 @@ Files:     ccan/array_size/*
            ccan/check_type/*
            ccan/build_assert/*
            ccan/array_size/*
+Copyright: Copyright Rusty Russell <rusty@rustcorp.com.au>
+           Copyright(c) 2005 Linus Torvalds
 License:   CC0
-
-Copyright: Public Domain
-Files:     ccan/list/*
-License:   BSD-MIT
 
 License: BSD-MIT
  .
