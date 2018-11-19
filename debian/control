@@ -11,6 +11,8 @@ Build-Depends: debhelper (>=9),
                libuuid1,
                uuid-dev,
                libjson-c-dev,
+               bash-completion,
+               systemd,
                asciidoctor
 Homepage: https://github.com/pmem/ndctl
 Vcs-Browser: https://github.com/leitao/ndctl_deb
