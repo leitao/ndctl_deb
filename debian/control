@@ -39,6 +39,7 @@ Package: libndctl6-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: libndctl-dev
 Description: Development files for libndctl6
  ndctl is a utility for managing the "libnvdimm" kernel subsystem.
  .
@@ -58,6 +59,7 @@ Package: libdaxctl1-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: libdaxctl-dev
 Description: Development files for libdaxctl1
  ndctl is a utility for managing the "libnvdimm" kernel subsystem.
  .
