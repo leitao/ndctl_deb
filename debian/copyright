@@ -50,6 +50,47 @@ Copyright: Copyright (C) 2016 Hewlett Packard Enterprise Development LP
            Copyright (c) 2016, Intel Corporation.
 License:   LGPL-2.1
 
+Files:     util/*
+Copyright: 2014-2018 Intel Corporation
+           2009 Akinobu Mita
+           2008 Miklos Vajna
+           2005-2006 Linus Torvalds
+           2007 Pierre Habouzit
+           2005 Junio C Hamano
+License:   GPL-2
+
+Files:     Documentation/*.xsl
+Copyright: 2006, Sean Estabrooks
+           2009, Chris Johnsen
+License:   GPL-2
+
+Files:     Documentation/asciidoc.conf.in
+Copyright: 2005, Sergey Vlasov
+           2005, Jonas Fonseca
+License:   GPL-2
+
+Files:     Documentation/ndctl/ndctl-monitor.txt
+           test/monitor.sh
+           test/max_available_extent_ns.sh
+           test/list-smart-dimm.c
+           test/common
+           ndctl/monitor.c
+Copyright: 2018, FUJITSU LIMITED
+License:   GPL-2
+
+Files:     ndctl/lib/nfit.c
+Copyright: 2018, FUJITSU LIMITED
+License:   LGPL-2.1
+
+Files:     sles/header
+Copyright: 2015 SUSE LINUX GmbH, Nuernberg, Germany
+           2015 Intel Corporation
+License:   GPL-2
+
+Files:     test/mmap.c
+Copyright: 2015 Toshi Kani, Hewlett Packard Enterprise
+License:   GPL-2
+
 Files:     ccan/array_size/*
            ccan/str/*
            ccan/short_types/*
